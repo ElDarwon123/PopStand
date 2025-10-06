@@ -6,6 +6,6 @@ import { ConfigModule } from "@nestjs/config";
 @Module({
     imports: [ConfigModule],
     providers: [FirestoreService],
-    exports: [FirestoreService],
+    exports: [FirestoreService, FirestoreModule],
 })
 export class FirestoreModule {}
